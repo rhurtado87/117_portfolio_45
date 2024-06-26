@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+
+<div class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static 'img/vb_survivalGuide.png' %}" alt="Ricardo's Image">
+    </div>
+
+    <div class="about-description-container center-column">
+        <h1>Fullstack Dev</h1>
+        <h2>Ricardo Hurtado</h2>
+        <p>Hi, I'm Ricardo. I'm a passionate individual with a love for coding and technology. 
+        I enjoy solving problems. Fresh out of school, I gained a solid foundation in both front-end and back-end
+        development. I am well-equipped with skills that help me build complete web applications from start to finish.</p>
+        
+        <div class="label-container center-column">
+            <h2>Technical Skills:</h2> 
+            <!-- Moved outside the paragraph -->
+            <div class="label-list center-row">
+                <span class="label-text">HTML</span>
+                <span class="label-text">CSS</span>
+                <span class="label-text">Python</span>
+                <span class="label-text">Django</span>
+                <span class="label-text">Figma</span>
+                <span class="label-text">React</span>
+                <!-- Add more skills here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

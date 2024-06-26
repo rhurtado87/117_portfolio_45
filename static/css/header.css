@@ -1,0 +1,36 @@
+header {
+    height: 60px;
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+
+}
+
+/* --LEFT SIDE---*/
+.logo {
+    width: 70% 1px;
+}
+
+
+/*--RIGHT SIDE--*/
+.nav-menu {
+    width: 80%;
+}
+
+.nav-menu a {
+    color: var(--neutral-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 2%;
+    padding: 1% 2%;
+}
+
+.nav-menu a:hover {
+    border-bottom: solid 2px var(--primary-color);
+    border-top: solid 2px var(--primary-color);
+}
+
+.nav-option {
+    width: 100%;
+}

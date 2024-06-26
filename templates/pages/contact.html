@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Contact Me{% endblock title %}
+
+{% block content %}
+<div class="contact">
+    <h1>Do you want to tell me something?</h1>
+    <h2>Please use the form below:</h2>
+
+    <form action="contact" method="post">
+        {% csrf_token %}
+        <div class="control">
+            {{ form.name }}
+        </div>
+
+        <div class="control">
+            {{ form.email }}
+        </div>
+
+        <div class="control">
+            {{ form.message }}
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+{% endblock content %}

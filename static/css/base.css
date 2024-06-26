@@ -1,0 +1,100 @@
+/*Variables"*/
+:root {
+    --primary-color: #568ee2;
+    --prmary-color-100: #D5CCFF;
+    --prmary-color-300: #7F66FF;
+
+    --secondary-color: #025834;
+    --secondary-color-600: #04C876;
+    --secondary-color-900: #01321E;
+
+    --neutral-color: #E0E0E0;
+    --background-color: #080808;
+    --surface-color: #252525;
+
+    --lobster-font: "Kanit", sans-serif;
+    --sans-font: "DM Sans", sans-serif;
+}
+
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*"Genera style: the style that is going to be applled to
+all the elemts.*/
+html {
+    background-color: var(--background-color);
+    font-size: 14px;
+}
+
+* {
+    font-family: var(--sans-font);
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Test Style*/
+h1 {
+    color: var(--secondary-color-600);
+    text-transform: uppercase;
+    font-size: 2rem;
+    /*2 x 14 = 28px */
+}
+
+h2 {
+    font-family: var(--lobster-font);
+    color: var(--primary-color);
+    letter-spacing: 0.06rem;
+    font-size: 1.8rem;
+}
+
+p {
+    color: var(--neutral-color);
+    font: 1.1rem;
+}
+
+.label-text {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+#check-option,
+.nav-btn {
+    display: none;
+}
+
+.btn-primary {
+    font-weight: bold;
+    background-color: var(--primary-color-300);
+    color: var(--neutral-color);
+    border: none;
+    padding: 0.5% 1%;
+    border-radius: 0.5rem;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(172deg, #A9F 5.07%, #7F66FF 92.93%);
+}
+
+.add-project-container {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
