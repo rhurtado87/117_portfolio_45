@@ -2,8 +2,8 @@ header {
     height: 60px;
     position: sticky;
     top: 0px;
-
     display: flex;
+    background-color: var(--surface-color);
 
 }
 

@@ -20,6 +20,8 @@ class Project(models.Model):
     repository = models.URLField()
     technologies = models.ManyToManyField(Technology)
 
+    
+
     def __str__(self):
         return f"{self.name} - ({self.year})"
 

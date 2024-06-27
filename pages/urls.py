@@ -1,7 +1,10 @@
 from django.urls import path
-from .views import AboutPageView, ContactsPageView
+from django.contrib import admin
+from pages.views import about, contact
 
 urlpatterns = [
-    path("", AboutPageView.as_view(), name="about"),
-    path("contact/", ContactsPageView.as_view(), name="contact"),
+    path('admin/', admin.site.urls),
+    path('', about, name='about'),
+    path('contact', contact, name ='contact')
+
 ]

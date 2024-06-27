@@ -9,7 +9,7 @@
     --secondary-color-900: #01321E;
 
     --neutral-color: #E0E0E0;
-    --background-color: #080808;
+    --background-color: #0f0f0f;
     --surface-color: #252525;
 
     --lobster-font: "Kanit", sans-serif;
@@ -64,6 +64,14 @@ h2 {
 p {
     color: var(--neutral-color);
     font: 1.1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 0 20px;
+    text-decoration: none;
+    /* or underline, overline, line-through */
+    text-shadow: 1px 1px 1px rgba(240, 238, 238, 0.5);
 }
 
 .label-text {
@@ -90,7 +98,7 @@ p {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(172deg, #A9F 5.07%, #7F66FF 92.93%);
+    background: linear-gradient(172deg, rgb(32, 70, 175) 5.07%, #7860ee 92.93%);
 }
 
 .add-project-container {

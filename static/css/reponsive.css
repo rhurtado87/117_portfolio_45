@@ -32,7 +32,7 @@ Following the Microsoft documentation.
 
     .about-image-container img {
         height: 30rem;
-        object-position: center 40%;
+        object-position: center 100%;
     }
 
     .project-card {

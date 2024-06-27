@@ -33,6 +33,7 @@
 
 /*--- Projects Section --*/
 
+
 .project-card {
 
     width: 25rem;
@@ -42,19 +43,13 @@
     border-radius: 1%;
 }
 
+
+
 .project-card p {
     font-size: 1.1rem;
     margin-top: 0.05rem;
     margin-bottom: 0.5rem;
     font-style: italic;
-}
-
-.project-card p:nth-child(3) {
-    /*--- this show the YYYY---*/
-    font-weight: bold;
-    font-style: italic;
-    justify-content: space-between;
-    margin: 0.5rem 0px;
 }
 
 a p:nth-child(2) {
@@ -66,6 +61,13 @@ a p:nth-child(2) {
 
 a p:nth-child(3) {
     font-style: italic;
+}
+
+a p:nth-child(4) {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-top: 0.5rem;
 }
 
 .project-card:hover {
@@ -91,4 +93,26 @@ a p:nth-child(3) {
     justify-content: center;
     gap: 4rem;
     width: 100%;
+}
+
+.new-project-section {
+    padding: 2rem;
+}
+
+#projectForm {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    border: solid 1px var(--secondary-color);
+    padding: 0px 2%;
+
+}
+
+.control {
+    margin: 1rem 0px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
