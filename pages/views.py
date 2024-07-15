@@ -23,7 +23,8 @@ def contact(request):
                 "Message from " + name,
                 message,
                 email_from,
-                [email_to]
+                [email_to],
+                html_message=html
             )
             return redirect("about")
 
